@@ -148,6 +148,7 @@ public final class PhotosLibraryClient extends InternalPhotosLibraryClient {
     BatchCreateMediaItemsRequest request =
         BatchCreateMediaItemsRequest.newBuilder().addAllNewMediaItems(newMediaItems).build();
     return batchCreateMediaItems(request);
+    return true;
   }
 
   /**
